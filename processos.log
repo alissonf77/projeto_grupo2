@@ -1,0 +1,72 @@
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.8  28244  4400 ?        Ss   21:04   0:00 /sbin/init
+root         2  0.0  0.0      0     0 ?        S    21:04   0:00 [kthreadd]
+root         3  0.0  0.0      0     0 ?        S    21:04   0:00 [ksoftirqd/0]
+root         5  0.0  0.0      0     0 ?        S<   21:04   0:00 [kworker/0:0H]
+root         7  0.0  0.0      0     0 ?        S    21:04   0:00 [rcu_sched]
+root         8  0.0  0.0      0     0 ?        S    21:04   0:00 [rcu_bh]
+root         9  0.0  0.0      0     0 ?        S    21:04   0:00 [migration/0]
+root        10  0.0  0.0      0     0 ?        S    21:04   0:00 [watchdog/0]
+root        11  0.0  0.0      0     0 ?        S<   21:04   0:00 [khelper]
+root        12  0.0  0.0      0     0 ?        S    21:04   0:00 [kdevtmpfs]
+root        13  0.0  0.0      0     0 ?        S<   21:04   0:00 [netns]
+root        14  0.0  0.0      0     0 ?        S    21:04   0:00 [khungtaskd]
+root        15  0.0  0.0      0     0 ?        S<   21:04   0:00 [writeback]
+root        16  0.0  0.0      0     0 ?        SN   21:04   0:00 [ksmd]
+root        17  0.0  0.0      0     0 ?        S<   21:04   0:00 [crypto]
+root        18  0.0  0.0      0     0 ?        S<   21:04   0:00 [kintegrityd]
+root        19  0.0  0.0      0     0 ?        S<   21:04   0:00 [bioset]
+root        20  0.0  0.0      0     0 ?        S<   21:04   0:00 [kblockd]
+root        21  0.0  0.0      0     0 ?        S    21:04   0:00 [kworker/0:1]
+root        22  0.0  0.0      0     0 ?        S    21:04   0:00 [kswapd0]
+root        23  0.0  0.0      0     0 ?        S<   21:04   0:00 [vmstat]
+root        24  0.0  0.0      0     0 ?        S    21:04   0:00 [fsnotify_mark]
+root        30  0.0  0.0      0     0 ?        S<   21:04   0:00 [kthrotld]
+root        31  0.0  0.0      0     0 ?        S<   21:04   0:00 [ipv6_addrconf]
+root        32  0.0  0.0      0     0 ?        S<   21:04   0:00 [deferwq]
+root        33  0.0  0.0      0     0 ?        S    21:04   0:00 [kworker/u2:1]
+root        66  0.0  0.0      0     0 ?        S<   21:04   0:00 [kpsmoused]
+root        67  0.0  0.0      0     0 ?        S<   21:04   0:00 [ata_sff]
+root        68  0.0  0.0      0     0 ?        S    21:04   0:00 [scsi_eh_0]
+root        69  0.0  0.0      0     0 ?        S<   21:04   0:00 [scsi_tmf_0]
+root        70  0.0  0.0      0     0 ?        S    21:04   0:00 [kworker/u2:2]
+root        73  0.0  0.0      0     0 ?        S<   21:05   0:00 [kworker/0:1H]
+root        92  0.0  0.0      0     0 ?        D    21:05   0:00 [jbd2/sda1-8]
+root        93  0.0  0.0      0     0 ?        S<   21:05   0:00 [ext4-rsv-conver]
+root       126  0.0  0.0      0     0 ?        S    21:05   0:00 [kauditd]
+root       129  0.0  0.5  28872  3000 ?        Ss   21:05   0:00 /lib/systemd/systemd-journald
+root       136  0.0  0.6  40816  3152 ?        Ss   21:05   0:00 /lib/systemd/systemd-udevd
+root       331  0.0  1.5  25404  7800 ?        Ss   21:05   0:00 dhclient -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases eth0
+root       374  0.0  0.5  37080  2620 ?        Ss   21:05   0:00 /sbin/rpcbind -w
+statd      383  0.0  0.5  37280  2756 ?        Ss   21:05   0:00 /sbin/rpc.statd
+root       388  0.0  0.0      0     0 ?        S<   21:05   0:00 [rpciod]
+root       390  0.0  0.0      0     0 ?        S<   21:05   0:00 [nfsiod]
+root       397  0.0  0.0  27568   228 ?        Ss   21:05   0:00 /usr/sbin/rpc.idmapd
+root       398  0.0  0.5  27504  2784 ?        Ss   21:05   0:00 /usr/sbin/cron -f
+bind       399  0.0  3.6 166852 18604 ?        Ssl  21:05   0:00 /usr/sbin/named -f -u bind
+root       400  0.0  1.0  55184  5268 ?        Ss   21:05   0:00 /usr/sbin/sshd -D
+daemon     401  0.0  0.3  19024  1748 ?        Ss   21:05   0:00 /usr/sbin/atd -f
+root       403  0.0  0.4  19856  2408 ?        Ss   21:05   0:00 /lib/systemd/systemd-logind
+message+   408  0.0  0.6  42124  3244 ?        Ss   21:05   0:00 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation
+root       432  0.0  0.6 262884  3356 ?        Ssl  21:05   0:00 /usr/sbin/rsyslogd -n
+root       434  0.0  0.3   4256  1596 ?        Ss   21:05   0:00 /usr/sbin/acpid
+root       444  0.0  0.5  63528  2992 tty1     Ss   21:05   0:00 /bin/login --        
+nagios     705  0.0  0.6  29780  3540 ?        SNs  21:05   0:01 /usr/sbin/nagios3 -d /etc/nagios3/nagios.cfg
+root       724  0.0  4.2 227576 21664 ?        Ss   21:05   0:00 /usr/sbin/apache2 -k start
+www-data   733  0.0  0.9 140712  4784 ?        S    21:05   0:00 /usr/sbin/apache2 -k start
+www-data   749  0.0  1.7 227828  8756 ?        S    21:05   0:00 /usr/sbin/apache2 -k start
+www-data   750  0.0  1.7 227828  8756 ?        S    21:05   0:00 /usr/sbin/apache2 -k start
+www-data   751  0.0  1.7 227828  8756 ?        S    21:05   0:00 /usr/sbin/apache2 -k start
+www-data   752  0.0  1.6 227648  8496 ?        S    21:05   0:00 /usr/sbin/apache2 -k start
+www-data   753  0.0  1.6 227648  8504 ?        S    21:05   0:00 /usr/sbin/apache2 -k start
+Debian-+   758  0.0  0.6  53252  3272 ?        Ss   21:05   0:00 /usr/sbin/exim4 -bd -q30m
+vagrant    764  0.0  0.9  23212  4804 tty1     S    21:05   0:00 -bash
+root       773  0.0  0.6  44752  3420 tty1     S    21:05   0:00 sudo bash
+root       787  0.0  0.7  21960  3644 tty1     S+   21:06   0:00 bash
+www-data   797  0.0  1.7 227820  8768 ?        S    21:06   0:00 /usr/sbin/apache2 -k start
+root      1043  0.0  0.0      0     0 ?        S    21:19   0:00 [kworker/0:0]
+root      1417  0.0  0.5  42240  2596 ?        S    21:40   0:00 /usr/sbin/CRON -f
+root      1418  0.0  0.5  42500  2928 ?        S    21:40   0:00 /usr/sbin/CRON -f
+root      1420  0.0  0.1   4336   808 ?        Ss   21:40   0:00 /bin/sh -c ps -aux > /var/www/html/cgi-bin/processos.log
+root      1421  0.0  0.4  19100  2432 ?        R    21:40   0:00 ps -aux
+root      1422  0.0  0.9  53252  5040 ?        R    21:40   0:00 /usr/sbin/sendmail -i -FCronDaemon -B8BITMIME -oem root

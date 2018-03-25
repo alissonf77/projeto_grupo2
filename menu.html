@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<title>Menu</title>
+		<style>
+		body {
+			color: yellow;			
+		}
+		h1 {
+			color: yellow;
+			}
+		title {
+			color: yellow;
+			}
+		input {
+			color: red;
+			 }
+		</style> 
+	</head>
+			<body bgcolor="grey">
+		<center>
+		<h1>Menu</h1>
+		<br/>
+		<hr/>
+		<form action= "/cgi-bin/menu.cgi" method="post">
+			DNS: </br>
+			<input type="submit" name="d_i" value="Iniciar">
+			<input type="submit" name="d_p" value="Parar">
+			<input type="submit" name="d_r" value="Reiniciar"></br></br>
+			NAGIOS: </br>
+			<input type="submit" name="n_i" value="Iniciar">
+			<input type="submit" name="n_p" value="Parar">
+			<input type="submit" name="n_r" value="Reiniciar"></br></br>
+			FIREWALL: </br>
+			<input type="submit" name="f_i" value="Iniciar">
+			<input type="submit" name="f_p" value="Parar">
+			<input type="submit" name="f_r" value="Reiniciar"></br></br>
+		</form>
+		<hr/>
+			<form action="/cgi-bin/processos.cgi" method="post">
+			PROCESSOS </br>
+			<input type="submit" name="PS" value="Exibir Serviços Iniciados">
+		</form>
+		</center>
+	</body>
+</html>
