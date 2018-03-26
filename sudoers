@@ -1,0 +1,9 @@
+
+root	ALL=(ALL:ALL) ALL
+www-data ALL=(root) NOPASSWD: /var/www/html/cgi-bin/script.sh,/var/www/html/cgi-bin/firewall.sh,/var/www/html/cgi-bin/sfirewall.sh,/var/www/html/cgi-bin/rfirewall.sh
+# Allow members of group sudo to execute any command
+%sudo	ALL=(ALL:ALL) ALL
+
+# See sudoers(5) for more information on "#include" directives:
+
+#includedir /etc/sudoers.d
