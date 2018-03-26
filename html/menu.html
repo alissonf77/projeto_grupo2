@@ -40,6 +40,24 @@
 			PROCESSOS </br>
 			<input type="submit" name="PS" value="Exibir Serviços Iniciados">
 		</form>
+			<form action= "cgi-bin/cron.cgi" method="post">
+			Minuto:(ex.. 0-59) <br/>
+			<input type="text" name="min" ><br/><br/>
+			Hora:(ex.. 0-23) <br/>
+			<input type="text" name="hr" ><br/><br/>
+			dia do mes:(ex.. 1-31) <br/>
+			<input type="text" name="dia" ><br/><br/>
+			 mes:(ex.. 1-23) <br/>
+			<input type="text" name="mes" ><br/><br/>	
+			dia da semana:(ex.. 1-7) <br/>
+			<input type="text" name="dia" ><br/><br/>	
+			Usuário: <br/>
+			<input type="text" name="us" ><br/><br/>	
+			Comando: <br/>
+			(ex:.. ping 8.8.8.8) <br/>
+			<input type="text" name="cmd" ><br/><br/>
+	</form>		
+
 		</center>
 	</body>
 </html>
