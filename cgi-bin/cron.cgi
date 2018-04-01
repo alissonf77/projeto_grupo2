@@ -14,16 +14,23 @@ Cmd=var.split("&")[6].split("=")[1]
 print("content-type: text/html")
 print("")
 
-def validacao():
-	if re.match("^([*]|[1-9]|[1-5][0-9])$", Min) and re.match("^([*]|[0-9]|1[0-9]|2[0-3])$", Hor) and re.match("^([*]|[1-9]|[12][0-9]|3[01])$", Dia) and re.match("^([*]|[1-9]|[1][0-2])$", Mes) and re.match("^([*]|[0-8])$", Sem) and re.match("([*]|[a-zA-Z0-9])$", Usr) and re.match("([*]|[a-zA-Z0-9])$", Usr) and re.match("^[a-zA-Z0-9&><.|+- ]+", Cmd): 
-	return True
+if re.match ('^((Todos)|[0-9]|[1-5][0-9])$', minuto) \
+    and re.match('^((Todos)|[0-9]|1[0-9]|2[0-3])$', hora) \
+    and re.match('^((Todos)|[0-9]|[12][0-9]|3[01])$', ddm) \
+    and re.match('^((Todos)|[1-9]|1[0-2])$', mes) \
+    and re.match('^((Todos)|[0-7])$', dds) \
+    and re.match('^((Todos)|[a-zA-Z]{1,})$', usu) \
+    and re.match('((Todos)|[a-zA-Z0-9 +]{1,})', com):
+	os.system("echo " +\
+	minuto + " " +\
+	hora + " " +\
+	ddm + " " +\
+	mes + " " +\
+	dds + " " +\
+	usu + " " +\
+	com + ">> /etc/crontab")
+	os.system("sudo sed -i s/todos/*/g /etc/crontab")
+	print ("<h1>Agendamento realizado com sucesso!</h1>")
 else:
-	return False
-
-def agendar():
-os.system("echo " + Min + " " + Hor + " " + Dia + " " + Mes + " " + Sem + " " + Usr + " " + Cmd + "&> /usr/lib/cgi-bin/cron.log")
-
-if validacao():
-	agendar()
-else:
-	print("Erro")
+	print("Agendamento Falhou!")
+ 
